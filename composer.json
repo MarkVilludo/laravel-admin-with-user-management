@@ -1,18 +1,19 @@
 {
-    "name": "appzcoder/laravel-admin",
+    "name": "mark-villudo/laravel-admin-with-user-management",
     "license": "MIT",
     "description": "Laravel Admin Panel",
     "keywords": [
         "laravel",
         "admin",
         "laravel admin",
-        "laravel admin panel"
+        "laravel admin panel",
+        "Sohel Amin is the orig author http://www.appzcoder.com"
     ],
     "authors": [
         {
-            "name": "Sohel Amin",
-            "email": "sohelamincse@gmail.com",
-            "homepage": "http://www.appzcoder.com"
+            "name": "Mark Villudo",
+            "email": "markanthony.villudo@gmail.com",
+            "homepage": "https://markvilludo.github.io"
         }
     ],
     "require": {
