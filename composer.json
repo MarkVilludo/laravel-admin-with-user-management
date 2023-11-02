@@ -25,7 +25,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Appzcoder\\LaravelAdmin\\": "src/"
+            "MarkVilludo\\LaravelAdmin\\": "src/"
         },
         "files": [
             "src/helpers.php"
@@ -34,7 +34,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Appzcoder\\LaravelAdmin\\LaravelAdminServiceProvider"
+                "MarkVilludo\\LaravelAdmin\\LaravelAdminServiceProvider"
             ]
         }
     }

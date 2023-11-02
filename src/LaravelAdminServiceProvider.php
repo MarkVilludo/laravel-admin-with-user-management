@@ -1,6 +1,6 @@
 <?php
 
-namespace Appzcoder\LaravelAdmin;
+namespace MarkVilludo\LaravelAdmin;
 
 use File;
 use Illuminate\Support\ServiceProvider;
@@ -66,9 +66,9 @@ class LaravelAdminServiceProvider extends ServiceProvider
     public function register()
     {
         $this->commands(
-            'Appzcoder\LaravelAdmin\LaravelAdminCommand'
+            'MarkVilludo\LaravelAdmin\LaravelAdminCommand'
         );
 
-        $this->app->bind('Setting', \Appzcoder\LaravelAdmin\Setting::class);
+        $this->app->bind('Setting', \MarkVilludo\LaravelAdmin\Setting::class);
     }
 }

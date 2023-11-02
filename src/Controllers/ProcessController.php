@@ -1,6 +1,6 @@
 <?php
 
-namespace Appzcoder\LaravelAdmin\Controllers;
+namespace MarkVilludo\LaravelAdmin\Controllers;
 
 use App\Http\Controllers\Controller;
 use Artisan;

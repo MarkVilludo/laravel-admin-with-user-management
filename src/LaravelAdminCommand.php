@@ -1,6 +1,6 @@
 <?php
 
-namespace Appzcoder\LaravelAdmin;
+namespace MarkVilludo\LaravelAdmin;
 
 use App;
 use File;
@@ -54,8 +54,8 @@ class LaravelAdminCommand extends Command
         }
 
         $this->info("Publishing the assets");
-        $this->call('vendor:publish', ['--provider' => 'Appzcoder\CrudGenerator\CrudGeneratorServiceProvider', '--force' => true]);
-        $this->call('vendor:publish', ['--provider' => 'Appzcoder\LaravelAdmin\LaravelAdminServiceProvider', '--force' => true]);
+        $this->call('vendor:publish', ['--provider' => 'MarkVilludo\CrudGenerator\CrudGeneratorServiceProvider', '--force' => true]);
+        $this->call('vendor:publish', ['--provider' => 'MarkVilludo\LaravelAdmin\LaravelAdminServiceProvider', '--force' => true]);
         $this->call('vendor:publish', ['--provider' => 'Spatie\Activitylog\ActivitylogServiceProvider', '--tag' => 'migrations']);
 
         $this->info("Dumping the composer autoload");
@@ -69,7 +69,7 @@ class LaravelAdminCommand extends Command
         $routeFile = base_path('routes/web.php');
         $controllerNamespace = App::VERSION() >= '8.0' ? 'App\Http\Controllers\Admin\\' : 'Admin\\';
 
-        $routes =
+        $routes =  
             <<<EOD
 Route::get('admin', '{$controllerNamespace}AdminController@index');
 Route::resource('admin/roles', '{$controllerNamespace}RolesController');
@@ -80,8 +80,8 @@ Route::resource('admin/activitylogs', '{$controllerNamespace}ActivityLogsControl
     'index', 'show', 'destroy'
 ]);
 Route::resource('admin/settings', '{$controllerNamespace}SettingsController');
-Route::get('admin/generator', ['uses' => '\Appzcoder\LaravelAdmin\Controllers\ProcessController@getGenerator']);
-Route::post('admin/generator', ['uses' => '\Appzcoder\LaravelAdmin\Controllers\ProcessController@postGenerator']);
+Route::get('admin/generator', ['uses' => '\MarkVilludo\LaravelAdmin\Controllers\ProcessController@getGenerator']);
+Route::post('admin/generator', ['uses' => '\MarkVilludo\LaravelAdmin\Controllers\ProcessController@postGenerator']);
 
 EOD;
 
