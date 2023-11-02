@@ -129,6 +129,7 @@
 @endsection
 
 @section('scripts')
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script type="text/javascript">
         $( document ).ready(function() {
             $(document).on('click', '.btn-add', function(e) {
