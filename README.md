@@ -16,7 +16,7 @@ An admin panel for managing users, roles, permissions & crud.
 
 1. Run
     ```
-    composer require appzcoder/laravel-admin
+    composer require mark-villudo/laravel-admin-with-user-management
     ```
 
 2. Install the admin package.
